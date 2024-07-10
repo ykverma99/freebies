@@ -8,16 +8,16 @@ const CategoryOptions = ({
 }: {
   title: string;
   src: ImageSourcePropType;
-  containerStyle: string;
+  containerStyle?: string;
 }) => {
   return (
-    <View className="space-y-1 ">
+    <View className="space-y-1 mr-7 mb-4">
       <View
-        className={`h-14 w-14 rounded-md justify-center items-center ${containerStyle}`}
+        className={`h-[52] w-[52px] rounded-md justify-center items-center bg-neutral-200 ${containerStyle}`}
       >
-        <Image source={src} />
+        {/* <Image source={src} /> */}
       </View>
-      <Text className="text-lg text-center">{title}</Text>
+      <Text className="text-center">{title}</Text>
     </View>
   );
 };

@@ -1,9 +1,6 @@
-import { View, Text } from "react-native";
+import { View } from "react-native";
 import React from "react";
-import {
-  widthPercentageToDP as wp,
-  heightPercentageToDP as hp,
-} from "react-native-responsive-screen";
+
 import { StatusBar } from "expo-status-bar";
 import HomePageLoading from "@/components/HomePageLoading";
 
