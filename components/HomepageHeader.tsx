@@ -5,6 +5,7 @@ import {
   widthPercentageToDP,
 } from "react-native-responsive-screen";
 import { Ionicons } from "@expo/vector-icons";
+import { router } from "expo-router";
 
 const HomepageHeader = () => {
   return (
@@ -12,7 +13,7 @@ const HomepageHeader = () => {
       <View style={{ width: widthPercentageToDP(10) }} />
       <Text className="text-primary text-2xl font-bold">Mega Mall</Text>
       <View className="flex-row space-x-3">
-        <TouchableOpacity className="">
+        <TouchableOpacity onPress={() => router.push("/signup")} className="">
           <Ionicons
             name="notifications-outline"
             size={heightPercentageToDP(2.6)}
