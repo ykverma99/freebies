@@ -14,6 +14,7 @@ import {
   widthPercentageToDP,
 } from "react-native-responsive-screen";
 import { Ionicons } from "@expo/vector-icons";
+import { router } from "expo-router";
 
 const login = () => {
   const [showPassword, setshowPassword] = useState(false);
@@ -75,7 +76,9 @@ const login = () => {
           style={{ height: heightPercentageToDP(18) }}
         >
           <Text>Forgot Password</Text>
-          <Text className="text-primary"> Sign Up</Text>
+          <Pressable onPress={() => router.push("/signup")}>
+            <Text className="text-primary"> Sign Up</Text>
+          </Pressable>
         </View>
       </KeyboardAvoidingView>
     </SafeAreaView>
